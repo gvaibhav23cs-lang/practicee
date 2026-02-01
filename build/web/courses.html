@@ -1,0 +1,162 @@
+
+
+ 
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Course</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: beige; 
+        } 
+ 
+        header { 
+            background-color: #333; 
+            color: #fff; 
+            padding: 15px 0; 
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        } 
+ 
+        .logo { 
+            text-decoration: none; 
+            color: greenyellow; 
+            font-size: 24px; 
+            font-weight: bold; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        } 
+ 
+        .nav-links { 
+            display: flex; 
+            gap: 20px; 
+        } 
+ 
+        .nav-links a { 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 18px; 
+            font-weight: bold; 
+            position: relative; 
+            transition: color 0.3s ease-in-out; 
+        } 
+ 
+        .nav-links a:hover { 
+            color: #ff9900; 
+        }
+         .nav-links a::before { 
+            content: ''; 
+            position: absolute; 
+            width: 100%; 
+            height: 2px; 
+            background-color: #ff9900; 
+            bottom: -5px; 
+            left: 0; 
+            transform: scaleX(0); 
+            transform-origin: 100% 50%; 
+            transition: transform 0.3s ease-in-out; 
+        } 
+ 
+        .nav-links a:hover::before { 
+            transform: scaleX(1); 
+            transform-origin: 0 50%; 
+        } 
+ 
+        .container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 20px; 
+        } 
+ 
+        .box { 
+            padding: 1%; 
+            background-color: #fff; 
+            border: 1px solid #ccc; 
+            padding: 20px; 
+            margin: 10px; 
+            width: calc(33.33% - 20px); 
+            text-align: center; 
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+        } 
+ 
+        .box img { 
+            max-width: 40%; 
+            height: 50%; 
+            margin-bottom: 20px; 
+        } 
+ 
+        /* Enroll button styling */ 
+        .enroll-button { 
+            display: block; 
+            margin: 20px auto; 
+            padding: 15px 30px; 
+            font-size: 18px; 
+            text-align: center; 
+            text-decoration: none; 
+            color: #fff; 
+            background-color: #4CAF50; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+            transition: background-color 0.3s ease; 
+        }
+         .enroll-button:hover { 
+            background-color: #45a049; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <a href="logo.jpg" class="logo">VAIBHAV UNIVERSITY</a> 
+            <div class="nav-links"> 
+                <a href="index.html">Home</a> 
+                <a href="about.html">About Us</a> 
+                <a href="contact.html">Contact</a> 
+                <a href="new.html">Login</a> 
+            </div> 
+        </nav> 
+    </header> 
+ 
+    <div class="container"> 
+        <div class="box"> 
+            <img src="image\Design.jpeg" alt="Image 1"> 
+            <p>Design</p> 
+        </div> 
+        <div class="box"> 
+            <img src="image\development.jpg" alt="Image 2"> 
+            <p>Web Development</p> 
+        </div> 
+        <div class="box"> 
+            <img src="image\marketing.jpg" alt="Image 3"> 
+            <p>Marketing</p> 
+        </div> 
+        <div class="box"> 
+            <img src="it.jpg" alt="Image 4"> 
+            <p>It and Software</p> 
+        </div> 
+        <div class="box"> 
+            <img src="image\personal development.jpg" alt="Image 5"> 
+            <p>Personal Development</p> 
+        </div> 
+        <div class="box"> 
+            <img src="image\business.jpg" alt="Image 6"> 
+            <p>Business</p> 
+        </div> 
+    </div> 
+    <a href="enroll.html" class="enroll-button">Enroll Now</a> 
+</body> 
+</html> 

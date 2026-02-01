@@ -1,0 +1,153 @@
+
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>College Website</title> 
+    <style> 
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color:#333333; 
+            color: #fff; 
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+        } 
+ 
+        header { 
+            background-color: #212529; 
+            color: #fff; 
+            padding: 15px 0; 
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+            width: 100%; 
+            position: fixed; 
+            top: 0; 
+            z-index: 1000; 
+            transition: background-color 0.3s ease; 
+        } 
+ 
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        } 
+ 
+        .logo { 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 24px; 
+            font-weight: bold; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        } 
+ 
+        .nav-links { 
+            display: flex; 
+            gap: 20px; 
+        }
+         .nav-links a { 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 16px; 
+            font-weight: bold; 
+            position: relative; 
+            transition: color 0.3s ease-in-out; 
+        } 
+ 
+        .nav-links a:hover { 
+            color: #42a5f5; 
+        } 
+ 
+        .nav-links a::before { 
+            content: ''; 
+            position: absolute; 
+            width: 100%; 
+            height: 2px; 
+            background-color: #42a5f5; 
+            bottom: -5px; 
+            left: 0; 
+            transform: scaleX(0); 
+            transform-origin: 100% 50%; 
+            transition: transform 0.3s ease-in-out; 
+        } 
+ 
+        .nav-links a:hover::before { 
+            transform: scaleX(1); 
+            transform-origin: 0 50%; 
+        } 
+ 
+        .content-container { 
+            text-align: center; 
+            max-width: 600px; 
+            margin: 100px auto; 
+        } 
+ 
+        h1 { 
+            color: #42a5f5; 
+            font-size: 3em; 
+            margin-bottom: 20px; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        } 
+ 
+        p { 
+            font-size: 1.4em; 
+            color: #ccc; 
+        } 
+ 
+        .button-container { 
+            margin-top: 30px; 
+        } 
+ 
+        .button-container a { 
+            text-decoration: none; 
+        }
+         .button-container button { 
+            display: inline-block; 
+            padding: 15px 30px; 
+            background-color: #28a745; 
+            color: #fff; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            margin: 0 10px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+            font-size: 16px; 
+            border: none; 
+        } 
+ 
+        .button-container button:hover { 
+            background-color: #218838; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <header> 
+        <nav> 
+            <a href="logo.jpg" class="logo">VAIBHAV UNIVERSITY</a> 
+            <div class="nav-links"> 
+                <a href="index.html">Home</a> 
+                <a href="about.html">About Us</a> 
+                <a href="contact.html">Contact</a> 
+                <a href="new.html">Login</a> 
+            </div> 
+        </nav> 
+    </header> 
+ 
+    <div class="content-container"> 
+        <h1>Welcome to Our College Website</h1> 
+        <p>Explore a world of knowledge and opportunities.</p> 
+ 
+        <div class="button-container"> 
+            <a href="register.html"><button>Register Now</button></a> 
+            <a href="login.html"><button>Login</button></a> 
+        </div> 
+    </div> 
+ 
+</body> 
+</html>

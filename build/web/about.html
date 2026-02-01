@@ -1,0 +1,188 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Academics University</title> 
+    <style> 
+        body { 
+            background-image: url(''); 
+            background-size: cover; 
+            font-family: 'Arial', sans-serif; 
+            background-color: #f8f8f8; 
+            margin: 0; 
+            padding: 0; 
+            color: #333; 
+        } 
+ 
+        header { 
+            background-color: #333; 
+            color: #fff; 
+            padding: 15px 0; 
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+        } 
+ 
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+        } 
+ 
+        .logo { 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 24px; 
+            font-weight: bold; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+        } 
+ 
+        .nav-links { 
+            display: flex; 
+            gap: 20px; 
+        } 
+ 
+        .nav-links a { 
+            text-decoration: none; 
+            color: #fff; 
+            font-size: 18px; 
+            font-weight: bold; 
+            position: relative; 
+            transition: color 0.3s ease-in-out; 
+        }
+         .nav-links a:hover { 
+            color: #ff9900; 
+        } 
+ 
+        .nav-links a::before { 
+            content: ''; 
+            position: absolute; 
+            width: 100%; 
+            height: 2px; 
+            background-color: #ff9900; 
+            bottom: -5px; 
+            left: 0; 
+            transform: scaleX(0); 
+            transform-origin: 100% 50%; 
+            transition: transform 0.3s ease-in-out; 
+        } 
+ 
+        .nav-links a:hover::before { 
+            transform: scaleX(1); 
+            transform-origin: 0 50%; 
+        } 
+ 
+        h1 { 
+            text-align: center; 
+            color:black; 
+            padding: 20px; 
+            margin: 0; 
+            font-family: "Times New Roman", Times, serif; 
+            font-size: 36px; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        } 
+ 
+        .container { 
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            padding: 20px; 
+        } 
+ 
+        .images { 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            margin-right: 20px;  
+        } 
+ 
+        .images img { 
+            width: 100%; 
+            max-width: 400px; 
+            height: auto; 
+            margin-bottom: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+            transition: transform 0.3s ease-in-out; 
+        }
+         .images img:hover { 
+            transform: scale(1.1); 
+        } 
+ 
+        .paragraph { 
+            flex: 1; 
+            padding: 20px; 
+            background-color: rgba(255, 255, 255, 0.9); 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+            border-radius: 10px; 
+        } 
+ 
+        .paragraph h1 { 
+            font-size: 32px; 
+            margin-bottom: 15px; 
+            color: #333; 
+            text-align: center; 
+            position: relative; 
+        } 
+ 
+        .paragraph h1::after { 
+            content: ''; 
+            position: absolute; 
+            width: 60px; 
+            height: 2px; 
+            background-color: #ff9900; 
+            bottom: -5px; 
+            left: 50%; 
+            transform: translateX(-50%); 
+        } 
+ 
+        p { 
+            font-size: 18px; 
+            line-height: 1.6; 
+            color: #555; 
+        } 
+ 
+        span { 
+            color: #ff9900; 
+            font-weight: bold; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <nav> 
+            <a href="logo.jpg" class="logo">VAIBHAV UNIVERSITY</a> 
+            <div class="nav-links"> 
+                <a href="index.html">Home</a> 
+                <a href="about.html">About Us</a> 
+                <a href="contact.html">Contact</a> 
+                <a href="new.html">Login</a> 
+            </div> 
+        </nav> 
+    </header>
+     <h1>About Us</h1> 
+    <div class="container"> 
+        <div class="images"> 
+            <img src="image\student.jpg" alt="University Campus"> 
+            <img src="image\scholar.jpeg" alt="Student Gathering"> 
+        </div> 
+        <div class="paragraph"> 
+            <h1><span>Welcome to VAIBHAV University</span></h1> 
+            <p>Discover a world of endless possibilities at Vaibhav University. With a legacy spanning over 
+two decades, we are committed to igniting minds and shaping future leaders.</p> 
+            <p>Our innovative approach to education blends the wisdom of tradition with the cutting-edge tools of 
+today. At Vaibhav University, we believe in nurturing not only intellect but also character, preparing 
+students for a meaningful journey beyond our campus.</p> 
+            <p>Explore a diverse range of programs guided by experienced faculty who are dedicated to your 
+success. From rigorous academic pursuits to immersive experiential learning, we empower students to 
+embrace challenges and pursue their passions.</p> 
+            <p>Join us on a transformative journey of growth, collaboration, and discovery. At Vaibhav
+University, your dreams take root, and your future unfolds.</p> 
+        </div> 
+    </div> 
+</body> 
+</html>
+
