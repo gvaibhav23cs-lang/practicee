@@ -15,11 +15,22 @@ PreparedStatement ps = null;
 try {
     Class.forName("com.mysql.cj.jdbc.Driver");
 
-    String url = System.getenv("MYSQL_URL");
-    String user = System.getenv("MYSQL_USER");
-    String pass = System.getenv("MYSQL_PASSWORD");
+    String host = System.getenv("MYSQLHOST");
+    String port = System.getenv("MYSQLPORT");
+    String db   = System.getenv("MYSQLDATABASE");
+    String user = System.getenv("MYSQLUSER");
+    String pass = System.getenv("MYSQLPASSWORD");
 
-    conn = DriverManager.getConnection(url, user, pass);
+    if (host == null || port == null || db == null || user == null || pass == null) {
+        out.println("Railway ENV variables missing");
+        return;
+    }
+
+    String jdbcUrl =
+        "jdbc:mysql://" + host + ":" + port + "/" + db +
+        "?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+
+    conn = DriverManager.getConnection(jdbcUrl, user, pass);
 
     ps = conn.prepareStatement(
         "INSERT INTO register(name,email,password) VALUES (?,?,?)"
@@ -32,9 +43,9 @@ try {
     response.sendRedirect("thanks.html");
 
 } catch (Exception e) {
-    out.println("ERROR: " + e);
+    out.println("DB ERROR: " + e);
 } finally {
-    if (ps != null) ps.close();
-    if (conn != null) conn.close();
+    try { if (ps != null) ps.close(); } catch(Exception ignored){}
+    try { if (conn != null) conn.close(); } catch(Exception ignored){}
 }
 %>
