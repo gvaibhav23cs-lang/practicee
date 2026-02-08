@@ -1,8 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="">
-  <Resource auth="Container" 
-            driverClassName="com.mysql.cj.jdbc.Driver" 
-            maxIdle="5" maxTotal="10" maxWaitMillis="-1" name="jdbc/studentdb" 
-            password="UgKckuTTDEZMGSDmPHIkAOmKrMfUvzsA" type="javax.sql.DataSource" 
-            url="jdbc:mysql://interchange.proxy.rlwy.net:10798/railway?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;serverTimezone=UTC" username="root"/>
-</Context>
+<Context path=""/>
