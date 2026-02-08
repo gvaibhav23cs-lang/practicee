@@ -15,11 +15,11 @@ PreparedStatement ps = null;
 try {
     Class.forName("com.mysql.cj.jdbc.Driver");
 
-    String host = System.getenv("MYSQLHOST");
-    String port = System.getenv("MYSQLPORT");
-    String db   = System.getenv("MYSQLDATABASE");
-    String user = System.getenv("MYSQLUSER");
-    String pass = System.getenv("MYSQLPASSWORD");
+    String host = System.getenv("interchange.proxy.rlwy.net");
+    String port = System.getenv("10798");
+    String db   = System.getenv("railway");
+    String user = System.getenv("root");
+    String pass = System.getenv("UgKckuTTDEZMGSDmPHIkAOmKrMfUvzsA");
 
     if (host == null || port == null || db == null || user == null || pass == null) {
         out.println("Railway ENV variables missing");
